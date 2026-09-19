@@ -1,0 +1,203 @@
+{
+  "clean_baseline": {
+    "resnet50": {
+      "top1_accuracy": 0.9620000123977661,
+      "macro_f1": 0.9621224248013499,
+      "mean_max_confidence": 0.9462582468986511
+    },
+    "vit_b_16": {
+      "top1_accuracy": 0.9660000205039978,
+      "macro_f1": 0.9660269917918203,
+      "mean_max_confidence": 0.9705353379249573
+    },
+    "clip_vit_b_32_zero_shot": {
+      "top1_accuracy": 0.9380000233650208,
+      "macro_f1": 0.9365822501006942,
+      "mean_max_confidence": 0.9230837225914001
+    }
+  },
+  "color_bias": {
+    "grayscale": {
+      "resnet50": {
+        "top1_accuracy": 0.9380000233650208,
+        "macro_f1": 0.938083608073776,
+        "mean_max_confidence": 0.9391987919807434,
+        "prediction_consistency_vs_clean": 0.954,
+        "cosine_stability": 0.786785364151001
+      },
+      "vit_b_16": {
+        "top1_accuracy": 0.9440000057220459,
+        "macro_f1": 0.9442808968238158,
+        "mean_max_confidence": 0.9527010321617126,
+        "prediction_consistency_vs_clean": 0.954,
+        "cosine_stability": 0.7236615419387817
+      },
+      "clip_vit_b_32_zero_shot": {
+        "top1_accuracy": 0.8960000276565552,
+        "macro_f1": 0.895581623562947,
+        "mean_max_confidence": 0.9053861498832703,
+        "prediction_consistency_vs_clean": 0.922,
+        "cosine_stability": 0.8842030763626099
+      }
+    },
+    "hue_rotation": {
+      "resnet50": {
+        "top1_accuracy": 0.9120000004768372,
+        "macro_f1": 0.9118296164092186,
+        "mean_max_confidence": 0.9259644150733948,
+        "prediction_consistency_vs_clean": 0.93,
+        "cosine_stability": 0.7281351089477539
+      },
+      "vit_b_16": {
+        "top1_accuracy": 0.9399999976158142,
+        "macro_f1": 0.9397254778630749,
+        "mean_max_confidence": 0.9344306588172913,
+        "prediction_consistency_vs_clean": 0.946,
+        "cosine_stability": 0.7002289891242981
+      },
+      "clip_vit_b_32_zero_shot": {
+        "top1_accuracy": 0.8999999761581421,
+        "macro_f1": 0.8987381730905455,
+        "mean_max_confidence": 0.8862523436546326,
+        "prediction_consistency_vs_clean": 0.926,
+        "cosine_stability": 0.8812680244445801
+      }
+    }
+  },
+  "translation": {
+    "0": {
+      "resnet50": {
+        "mean_accuracy": 0.9620000123977661,
+        "mean_consistency": 1.0,
+        "mean_cosine_stability": 1.0
+      },
+      "vit_b_16": {
+        "mean_accuracy": 0.9660000205039978,
+        "mean_consistency": 1.0,
+        "mean_cosine_stability": 1.0
+      },
+      "clip_vit_b_32_zero_shot": {
+        "mean_accuracy": 0.9380000233650208,
+        "mean_consistency": 1.0,
+        "mean_cosine_stability": 1.0
+      }
+    },
+    "8": {
+      "resnet50": {
+        "mean_accuracy": 0.9584999978542328,
+        "mean_consistency": 0.985,
+        "mean_cosine_stability": 0.9622674435377121
+      },
+      "vit_b_16": {
+        "mean_accuracy": 0.9709999859333038,
+        "mean_consistency": 0.9815,
+        "mean_cosine_stability": 0.9466691762208939
+      },
+      "clip_vit_b_32_zero_shot": {
+        "mean_accuracy": 0.9289999902248383,
+        "mean_consistency": 0.9595,
+        "mean_cosine_stability": 0.9776532351970673
+      }
+    },
+    "16": {
+      "resnet50": {
+        "mean_accuracy": 0.949999988079071,
+        "mean_consistency": 0.98,
+        "mean_cosine_stability": 0.9421474933624268
+      },
+      "vit_b_16": {
+        "mean_accuracy": 0.9680000096559525,
+        "mean_consistency": 0.988,
+        "mean_cosine_stability": 0.9695590287446976
+      },
+      "clip_vit_b_32_zero_shot": {
+        "mean_accuracy": 0.9194999933242798,
+        "mean_consistency": 0.9405,
+        "mean_cosine_stability": 0.962872102856636
+      }
+    },
+    "32": {
+      "resnet50": {
+        "mean_accuracy": 0.9440000057220459,
+        "mean_consistency": 0.9684999999999999,
+        "mean_cosine_stability": 0.9167816340923309
+      },
+      "vit_b_16": {
+        "mean_accuracy": 0.9634999930858612,
+        "mean_consistency": 0.9864999999999999,
+        "mean_cosine_stability": 0.9348486065864563
+      },
+      "clip_vit_b_32_zero_shot": {
+        "mean_accuracy": 0.9010000079870224,
+        "mean_consistency": 0.9420000000000001,
+        "mean_cosine_stability": 0.9648795276880264
+      }
+    }
+  },
+  "patch_shuffle": {
+    "resnet50": {
+      "top1_accuracy": 0.8700000047683716,
+      "macro_f1": 0.8690518926957648,
+      "mean_max_confidence": 0.8962856531143188,
+      "prediction_consistency_vs_clean": 0.886,
+      "cosine_stability": 0.6846424341201782
+    },
+    "vit_b_16": {
+      "top1_accuracy": 0.9020000100135803,
+      "macro_f1": 0.9020438164571208,
+      "mean_max_confidence": 0.8903124332427979,
+      "prediction_consistency_vs_clean": 0.912,
+      "cosine_stability": 0.626323401927948
+    },
+    "clip_vit_b_32_zero_shot": {
+      "top1_accuracy": 0.7580000162124634,
+      "macro_f1": 0.7538063649169644,
+      "mean_max_confidence": 0.7239356637001038,
+      "prediction_consistency_vs_clean": 0.772,
+      "cosine_stability": 0.7428761124610901
+    }
+  },
+  "shape_vs_texture": {
+    "resnet50": {
+      "n_shape": 75,
+      "n_texture": 46,
+      "n_total": 234,
+      "shape_bias_pct": 61.98347107438016,
+      "coverage_pct": 51.70940170940171
+    },
+    "vit_b_16": {
+      "n_shape": 169,
+      "n_texture": 13,
+      "n_total": 234,
+      "shape_bias_pct": 92.85714285714286,
+      "coverage_pct": 77.77777777777777
+    },
+    "clip_vit_b_32_zero_shot": {
+      "n_shape": 121,
+      "n_texture": 23,
+      "n_total": 234,
+      "shape_bias_pct": 84.02777777777777,
+      "coverage_pct": 61.53846153846154
+    }
+  },
+  "representation_stability": {
+    "resnet50": {
+      "grayscale": 0.786785364151001,
+      "patch_shuffle": 0.6846424341201782,
+      "translation_32px": 0.9004437327384949,
+      "cue_conflict": 0.25935012102127075
+    },
+    "vit_b_16": {
+      "grayscale": 0.7236615419387817,
+      "patch_shuffle": 0.626323401927948,
+      "translation_32px": 0.9432238936424255,
+      "cue_conflict": 0.3673606812953949
+    },
+    "clip_vit_b_32": {
+      "grayscale": 0.8842030763626099,
+      "patch_shuffle": 0.7428761124610901,
+      "translation_32px": 0.9592822790145874,
+      "cue_conflict": 0.6971131563186646
+    }
+  }
+}
