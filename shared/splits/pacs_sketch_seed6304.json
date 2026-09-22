@@ -1,0 +1,10 @@
+{
+  "seed": 6304,
+  "val_fraction": 0.2,
+  "target_domain": "sketch",
+  "source_domains": ["photo", "art_painting", "cartoon"],
+  "class_names": ["dog", "elephant", "giraffe", "guitar", "horse", "house", "person"],
+  "sources": null,
+  "target": null,
+  "_note": "Placeholder. Auto-populated (stratified 80/20, seed 6304) by `python -m shared.pacs_protocol --root <PACS>` or the first train run. Commit the populated file so Tasks 2 and 3 share identical splits."
+}

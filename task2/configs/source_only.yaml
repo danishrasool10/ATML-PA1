@@ -1,0 +1,4 @@
+method:
+  name: source_only
+output:
+  run_name: source_only

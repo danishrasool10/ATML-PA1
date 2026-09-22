@@ -1,0 +1,6 @@
+method:
+  name: dan
+  lambda_mmd: 1.0
+  bandwidth_multipliers: [0.5, 1.0, 2.0]
+output:
+  run_name: dan

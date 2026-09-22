@@ -1,0 +1,9 @@
+method:
+  name: cdan
+  grl_max: 1.0
+  grl_gamma: 10.0
+  domain_loss_weight: 1.0
+  disc_hidden: 256
+  disc_dropout: 0.5
+output:
+  run_name: cdan

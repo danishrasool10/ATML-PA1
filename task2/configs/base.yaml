@@ -1,0 +1,29 @@
+seed: 6304
+
+data:
+  root: data/PACS            # folder containing photo/, art_painting/, cartoon/, sketch/
+  split_file: shared/splits/pacs_sketch_seed6304.json
+  image_size: 256
+  crop_size: 224
+  num_workers: 4             # per DataLoader
+  eval_batch_size: 128
+
+model:
+  num_classes: 7
+  pretrained: true           # torchvision ResNet18_Weights.IMAGENET1K_V1
+
+train:
+  max_epochs: 30
+  patience: 5
+  lr: 1.0e-4
+  weight_decay: 1.0e-4
+  source_per_domain_batch: 8 # 3 source domains x 8 = 24 source examples per update
+  target_batch: 24
+  steps_per_epoch: null      # null -> ceil(#pooled source-train / 24)
+
+output:
+  dir: task2/results
+  run_name: null
+
+method:
+  name: source_only
