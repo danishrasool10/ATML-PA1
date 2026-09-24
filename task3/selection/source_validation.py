@@ -68,12 +68,18 @@ def resolve_data_root(cfg_root: Optional[str] = None) -> Optional[Path]:
 
 def canon_domain(name: Any) -> str:
     key = re.sub(r"[^a-z]", "", str(name).lower())
+    if "photo" in key: return "photo"
+    if "art" in key: return "art_painting"
+    if "cartoon" in key: return "cartoon"
+    if "sketch" in key or "target" in key: return "sketch"
     return _DOMAIN_KEYS.get(key, key)
 
 
 def canon_part(name: Any) -> str:
     key = re.sub(r"[^a-z]", "", str(name).lower())
-    return {"training": "train", "valid": "val", "validation": "val"}.get(key, key)
+    if "train" in key: return "train"
+    if "val" in key or "test" in key: return "val"
+    return key
 
 
 def find_domain_dir(root: Optional[Path], domain: str) -> Optional[Path]:
@@ -131,34 +137,49 @@ def resolve_sample_path(p: str, root: Optional[Path], domain_dir: Optional[Path]
 
 def lookup_split(blob: Any, domain: str, part: str) -> Optional[list]:
     if isinstance(blob, dict):
+        # 1. {domain: {part: [...]}}
         for k, v in blob.items():
             if canon_domain(k) == domain and isinstance(v, dict):
                 for pk, pv in v.items():
                     if canon_part(pk) == part and isinstance(pv, list):
                         return pv
+        # 2. {part: {domain: [...]}}
         for k, v in blob.items():
             if canon_part(k) == part and isinstance(v, dict):
                 for dk, dv in v.items():
                     if canon_domain(dk) == domain and isinstance(dv, list):
                         return dv
+        # 3. Flattened keys like "photo_train": [...]
+        for k, v in blob.items():
+            if isinstance(v, list) and canon_domain(k) == domain and canon_part(k) == part:
+                return v
+        # 4. {domain: [{"split": "train", "path": ...}, ...]}
+        for k, v in blob.items():
+            if canon_domain(k) == domain and isinstance(v, list) and v and isinstance(v[0], dict):
+                rows = [e for e in v if canon_part(e.get("split", e.get("part", ""))) == part]
+                if rows: return rows
+        # 5. Deep search fallback
         for v in blob.values():
             if isinstance(v, (dict, list)):
                 r = lookup_split(v, domain, part)
                 if r is not None:
                     return r
-    elif isinstance(blob, list) and blob and isinstance(blob[0], dict) and "domain" in blob[0]:
+
+    elif isinstance(blob, list) and blob and isinstance(blob[0], dict):
+        # 6. Flat list of dicts: [{"domain": "photo", "split": "train", ...}]
         rows = [
             e for e in blob
-            if canon_domain(e.get("domain")) == domain and canon_part(e.get("split", e.get("part", ""))) == part
+            if canon_domain(e.get("domain", e.get("d", ""))) == domain and canon_part(e.get("split", e.get("part", ""))) == part
         ]
-        return rows or None
+        if rows: return rows
+
     return None
 
 
 def lookup_domain_all(blob: Any, domain: str) -> Optional[list]:
     if isinstance(blob, dict):
         for k, v in blob.items():
-            if canon_domain(k) == domain or (domain == "sketch" and canon_domain(k) == "target"):
+            if canon_domain(k) == domain:
                 if isinstance(v, list):
                     return v
                 if isinstance(v, dict):
@@ -207,7 +228,13 @@ def load_source_splits(cfg: Mapping[str, Any]) -> Dict[str, Dict[str, List[Tuple
         for part in ("train", "val"):
             entries = lookup_split(blob, d, part)
             if entries is None:
-                raise KeyError(f"No '{part}' split for domain '{d}' in {cfg['split_file']}.")
+                # Debug output to help diagnose if it still misses
+                keys_info = list(blob.keys()) if isinstance(blob, dict) else type(blob).__name__
+                raise KeyError(
+                    f"No '{part}' split for domain '{d}' in {cfg['split_file']}.\n"
+                    f"Top-level keys found in your JSON: {keys_info}\n"
+                    "If your JSON structure only saves indices instead of paths, `normalize_entry` will also need updating."
+                )
             samples = []
             for e in entries:
                 path, label = normalize_entry(e, class_names)
