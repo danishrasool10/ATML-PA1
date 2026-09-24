@@ -25,6 +25,9 @@ task1/results/**
 !task1/results/results.json
 !task1/results/figures/
 !task1/results/figures/**
+task2/results/**
+!task2/results/.gitkeep
+!task2/results/*.json
 ATML-PA1/
 data/raw/
 data/splits/
@@ -32,6 +35,7 @@ data/subsets/
 data/cue_conflicts/
 task1/data/raw/
 task1/data/splits/
+data/pacs/
 *.tar.gz
 *.npz
 .ipynb_checkpoints/

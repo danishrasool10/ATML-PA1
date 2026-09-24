@@ -1,0 +1,3 @@
+method: sam
+rho: 0.05                            # main comparison value
+study_values: [0.01, 0.05, 0.1]      # controlled study: rho

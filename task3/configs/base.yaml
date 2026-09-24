@@ -1,0 +1,24 @@
+# Settings shared by every Task 3 method (identical to the Task 2 protocol).
+seed: 6304
+split_file: shared/splits/pacs_sketch_seed6304.json
+data_root: null              # set here, via --data_root, or $PACS_ROOT (or a constant exposed by shared.pacs)
+source_domains: [photo, art_painting, cartoon]
+num_classes: 7
+pretrained: true             # torchvision ResNet18_Weights.IMAGENET1K_V1
+resize: 256
+crop: 224
+batch_per_domain: 8          # 8 Photo + 8 Art Painting + 8 Cartoon = 24 per step
+epoch_mode: max              # one epoch = steps to cover the largest source train set; smaller sources cycle
+num_workers: 4
+val_batch_size: 64
+optimizer:
+  name: adamw
+  lr: 1.0e-4
+  weight_decay: 1.0e-4
+max_epochs: 30
+patience: 5                  # early stop: epochs without improvement in mean source-val macro-F1
+output_dir: task3/results
+diagnostics:
+  separability_train_frac: 0.7
+  sharpness_per_domain: 32
+  sharpness_radius: 0.05

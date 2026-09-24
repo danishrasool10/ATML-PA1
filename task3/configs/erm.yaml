@@ -1,0 +1,4 @@
+method: erm
+# Path to the Task 2 source-only checkpoint. If set (or --load_from_task2 is passed) the checkpoint is
+# loaded as the ERM baseline (no retraining); if null, ERM is trained from ImageNet initialization.
+load_from_task2: null

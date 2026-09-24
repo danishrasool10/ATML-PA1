@@ -1,0 +1,4 @@
+method: dan_dg
+lambda_dg: 1.0                       # main comparison value
+mmd_bandwidth_multipliers: [0.5, 1.0, 2.0]
+study_values: [0.1, 1.0, 10.0]       # controlled study: lambda_DG
