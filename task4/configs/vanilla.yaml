@@ -1,1 +1,20 @@
-# Vanilla OSR configuration
+name: vanilla
+method: vanilla
+seed: 6304
+data_root: datasets
+output_dir: checkpoints
+num_workers: 4
+amp: true
+model:
+  arch: resnet18_cifar
+  num_classes: 10
+augmentation:
+  randaugment: false
+  ra_num_ops: 2
+  ra_magnitude: 9
+optim:
+  lr: 0.1
+  momentum: 0.9
+  weight_decay: 5.0e-4
+  batch_size: 128
+  epochs: 100

@@ -1,1 +1,26 @@
-# PROSER configuration
+name: proser
+method: proser
+seed: 6304
+data_root: datasets
+output_dir: checkpoints
+init_checkpoint: checkpoints/vanilla/best.pt
+num_workers: 4
+amp: true
+model:
+  arch: resnet18_cifar
+  num_known: 10
+  num_dummy: 5
+augmentation:
+  randaugment: false
+  ra_num_ops: 2
+  ra_magnitude: 9
+proser:
+  beta: 1.0
+  gamma: 0.1
+  mixup_alpha: 2.0
+optim:
+  lr: 1.0e-3
+  momentum: 0.9
+  weight_decay: 5.0e-4
+  batch_size: 128
+  epochs: 50
