@@ -68,10 +68,10 @@ def resolve_data_root(cfg_root: Optional[str] = None) -> Optional[Path]:
 
 def canon_domain(name: Any) -> str:
     key = re.sub(r"[^a-z]", "", str(name).lower())
-    if "photo" in key: return "photo"
-    if "art" in key: return "art_painting"
-    if "cartoon" in key: return "cartoon"
-    if "sketch" in key or "target" in key: return "sketch"
+    if key == "photo": return "photo"
+    if key in ("art", "artpainting"): return "art_painting"
+    if key == "cartoon": return "cartoon"
+    if key in ("sketch", "target"): return "sketch"
     return _DOMAIN_KEYS.get(key, key)
 
 
