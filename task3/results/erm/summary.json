@@ -1,0 +1,80 @@
+{
+  "run_name": "erm",
+  "method": "erm",
+  "config": {
+    "seed": 6304,
+    "split_file": "shared/splits/pacs_sketch_seed6304.json",
+    "data_root": null,
+    "source_domains": [
+      "photo",
+      "art_painting",
+      "cartoon"
+    ],
+    "num_classes": 7,
+    "pretrained": true,
+    "resize": 256,
+    "crop": 224,
+    "batch_per_domain": 8,
+    "epoch_mode": "max",
+    "num_workers": 4,
+    "val_batch_size": 64,
+    "optimizer": {
+      "name": "adamw",
+      "lr": 0.0001,
+      "weight_decay": 0.0001
+    },
+    "max_epochs": 30,
+    "patience": 5,
+    "output_dir": "task3/results",
+    "diagnostics": {
+      "separability_train_frac": 0.7,
+      "sharpness_per_domain": 32,
+      "sharpness_radius": 0.05
+    },
+    "method": "erm",
+    "load_from_task2": null
+  },
+  "best_epoch": 4,
+  "epochs_run": 9,
+  "source_val": {
+    "per_domain": {
+      "photo": {
+        "acc": 0.9700598802395209,
+        "macro_f1": 0.9644704726054891
+      },
+      "art_painting": {
+        "acc": 0.9121951219512195,
+        "macro_f1": 0.9077326187200002
+      },
+      "cartoon": {
+        "acc": 0.9466950959488273,
+        "macro_f1": 0.951127482828601
+      }
+    },
+    "mean_acc": 0.9429833660465227,
+    "mean_macro_f1": 0.9411101913846968,
+    "worst_acc": 0.9121951219512195,
+    "worst_macro_f1": 0.9077326187200002,
+    "worst_domain_by_f1": "art_painting"
+  },
+  "separability": {
+    "accuracy": 0.867109634551495,
+    "chance": 0.3333333333333333,
+    "n_train": 701,
+    "n_test": 301,
+    "domains": [
+      "photo",
+      "art_painting",
+      "cartoon"
+    ]
+  },
+  "sharpness": {
+    "loss": 0.15034078061580658,
+    "perturbed_loss": 0.44210872054100037,
+    "delta_sharp": 0.2917679399251938,
+    "grad_norm": 6.125796318054199,
+    "radius": 0.05,
+    "n": 96
+  },
+  "checkpoint": "/kaggle/working/ATML-PA1/task3/results/erm/best.pt"
+}

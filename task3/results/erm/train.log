@@ -1,0 +1,19 @@
+08:34:50 | === run 'erm' | method=erm | device=cuda | seed=6304 ===
+08:34:50 | photo: train=1336 val=334
+08:34:50 | art_painting: train=1638 val=410
+08:34:50 | cartoon: train=1875 val=469
+08:34:50 | steps/epoch=234 (batch 8 x 3 domains)
+08:35:16 | ep 01 | loss=0.4938 cls_loss=0.4938 | val meanF1=0.8881 worstF1=0.8341 meanAcc=0.8910 | *best* | 25s
+08:35:40 | ep 02 | loss=0.2217 cls_loss=0.2217 | val meanF1=0.9393 worstF1=0.9181 meanAcc=0.9381 | *best* | 23s
+08:36:03 | ep 03 | loss=0.1526 cls_loss=0.1526 | val meanF1=0.8989 worstF1=0.8761 meanAcc=0.9052 | no-improve 1/5 | 23s
+08:36:27 | ep 04 | loss=0.0981 cls_loss=0.0981 | val meanF1=0.9411 worstF1=0.9077 meanAcc=0.9430 | *best* | 24s
+08:36:51 | ep 05 | loss=0.0930 cls_loss=0.0930 | val meanF1=0.9270 worstF1=0.9061 meanAcc=0.9263 | no-improve 1/5 | 23s
+08:37:15 | ep 06 | loss=0.0800 cls_loss=0.0800 | val meanF1=0.9345 worstF1=0.8875 meanAcc=0.9312 | no-improve 2/5 | 23s
+08:37:38 | ep 07 | loss=0.0831 cls_loss=0.0831 | val meanF1=0.9013 worstF1=0.8564 meanAcc=0.9043 | no-improve 3/5 | 23s
+08:38:03 | ep 08 | loss=0.0657 cls_loss=0.0657 | val meanF1=0.9370 worstF1=0.9031 meanAcc=0.9370 | no-improve 4/5 | 23s
+08:38:26 | ep 09 | loss=0.0586 cls_loss=0.0586 | val meanF1=0.9400 worstF1=0.9168 meanAcc=0.9387 | no-improve 5/5 | 23s
+08:38:27 | Early stopping at epoch 9 (best epoch 4).
+08:38:27 | Verified: BatchNorm running statistics unchanged during training.
+08:38:39 | Separability (chance 0.333): 0.8671
+08:38:39 | Sharpness: L=0.1503 L_eps=0.4421 delta=0.2918
+08:38:39 | Best epoch 4: mean F1=0.9411 worst F1=0.9077 -> /kaggle/working/ATML-PA1/task3/results/erm/best.pt

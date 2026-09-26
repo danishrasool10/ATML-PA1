@@ -1,0 +1,16 @@
+08:38:45 | === run 'dan_dg' | method=dan_dg | device=cuda | seed=6304 ===
+08:38:46 | photo: train=1336 val=334
+08:38:46 | art_painting: train=1638 val=410
+08:38:46 | cartoon: train=1875 val=469
+08:38:46 | steps/epoch=234 (batch 8 x 3 domains)
+08:39:12 | ep 01 | loss=2.5233 cls_loss=1.9394 mmd=0.5839 | val meanF1=0.0507 worstF1=0.0421 meanAcc=0.2166 | *best* | 26s
+08:39:37 | ep 02 | loss=2.4479 cls_loss=1.9352 mmd=0.5128 | val meanF1=0.0507 worstF1=0.0421 meanAcc=0.2166 | no-improve 1/5 | 24s
+08:40:02 | ep 03 | loss=2.4026 cls_loss=1.9297 mmd=0.4729 | val meanF1=0.0507 worstF1=0.0421 meanAcc=0.2166 | no-improve 2/5 | 24s
+08:40:26 | ep 04 | loss=2.4271 cls_loss=1.9350 mmd=0.4921 | val meanF1=0.0507 worstF1=0.0421 meanAcc=0.2166 | no-improve 3/5 | 24s
+08:40:51 | ep 05 | loss=2.4175 cls_loss=1.9340 mmd=0.4835 | val meanF1=0.0507 worstF1=0.0421 meanAcc=0.2166 | no-improve 4/5 | 24s
+08:41:16 | ep 06 | loss=2.3746 cls_loss=1.9319 mmd=0.4427 | val meanF1=0.0507 worstF1=0.0421 meanAcc=0.2166 | no-improve 5/5 | 24s
+08:41:16 | Early stopping at epoch 6 (best epoch 1).
+08:41:16 | Verified: BatchNorm running statistics unchanged during training.
+08:41:20 | Separability (chance 0.333): 0.3223
+08:41:20 | Sharpness: L=1.9256 L_eps=1.9428 delta=0.0172
+08:41:20 | Best epoch 1: mean F1=0.0507 worst F1=0.0421 -> /kaggle/working/ATML-PA1/task3/results/dan_dg/best.pt

@@ -1,0 +1,85 @@
+{
+  "run_name": "sam",
+  "method": "sam",
+  "config": {
+    "seed": 6304,
+    "split_file": "shared/splits/pacs_sketch_seed6304.json",
+    "data_root": null,
+    "source_domains": [
+      "photo",
+      "art_painting",
+      "cartoon"
+    ],
+    "num_classes": 7,
+    "pretrained": true,
+    "resize": 256,
+    "crop": 224,
+    "batch_per_domain": 8,
+    "epoch_mode": "max",
+    "num_workers": 4,
+    "val_batch_size": 64,
+    "optimizer": {
+      "name": "adamw",
+      "lr": 0.0001,
+      "weight_decay": 0.0001
+    },
+    "max_epochs": 30,
+    "patience": 5,
+    "output_dir": "task3/results",
+    "diagnostics": {
+      "separability_train_frac": 0.7,
+      "sharpness_per_domain": 32,
+      "sharpness_radius": 0.05
+    },
+    "method": "sam",
+    "rho": 0.05,
+    "study_values": [
+      0.01,
+      0.05,
+      0.1
+    ]
+  },
+  "best_epoch": 7,
+  "epochs_run": 12,
+  "source_val": {
+    "per_domain": {
+      "photo": {
+        "acc": 0.9820359281437125,
+        "macro_f1": 0.9782967032967033
+      },
+      "art_painting": {
+        "acc": 0.9317073170731708,
+        "macro_f1": 0.9314339708653071
+      },
+      "cartoon": {
+        "acc": 0.9637526652452025,
+        "macro_f1": 0.9684981926624007
+      }
+    },
+    "mean_acc": 0.959165303487362,
+    "mean_macro_f1": 0.9594096222748036,
+    "worst_acc": 0.9317073170731708,
+    "worst_macro_f1": 0.9314339708653071,
+    "worst_domain_by_f1": "art_painting"
+  },
+  "separability": {
+    "accuracy": 0.8770764119601329,
+    "chance": 0.3333333333333333,
+    "n_train": 701,
+    "n_test": 301,
+    "domains": [
+      "photo",
+      "art_painting",
+      "cartoon"
+    ]
+  },
+  "sharpness": {
+    "loss": 0.10864365100860596,
+    "perturbed_loss": 0.21223510801792145,
+    "delta_sharp": 0.10359145700931549,
+    "grad_norm": 1.9329640865325928,
+    "radius": 0.05,
+    "n": 96
+  },
+  "checkpoint": "/kaggle/working/ATML-PA1/task3/results/sam/best.pt"
+}

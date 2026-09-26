@@ -1,0 +1,22 @@
+08:41:26 | === run 'sam' | method=sam | device=cuda | seed=6304 ===
+08:41:26 | photo: train=1336 val=334
+08:41:26 | art_painting: train=1638 val=410
+08:41:26 | cartoon: train=1875 val=469
+08:41:26 | steps/epoch=234 (batch 8 x 3 domains)
+08:42:12 | ep 01 | loss=1.0787 cls_loss=1.0787 perturbed_loss=1.3463 grad_norm=4.8448 | val meanF1=0.8617 worstF1=0.8042 meanAcc=0.8743 | *best* | 45s
+08:42:56 | ep 02 | loss=0.2997 cls_loss=0.2997 perturbed_loss=0.5675 grad_norm=4.4957 | val meanF1=0.9074 worstF1=0.8735 meanAcc=0.9087 | *best* | 43s
+08:43:39 | ep 03 | loss=0.1800 cls_loss=0.1800 perturbed_loss=0.3993 grad_norm=3.4810 | val meanF1=0.9204 worstF1=0.8742 meanAcc=0.9228 | *best* | 43s
+08:44:23 | ep 04 | loss=0.1309 cls_loss=0.1309 perturbed_loss=0.3224 grad_norm=2.9295 | val meanF1=0.9343 worstF1=0.9045 meanAcc=0.9370 | *best* | 43s
+08:45:06 | ep 05 | loss=0.0884 cls_loss=0.0884 perturbed_loss=0.2485 grad_norm=2.2909 | val meanF1=0.9415 worstF1=0.9233 meanAcc=0.9431 | *best* | 43s
+08:45:50 | ep 06 | loss=0.0630 cls_loss=0.0630 perturbed_loss=0.2049 grad_norm=1.9463 | val meanF1=0.9527 worstF1=0.9200 meanAcc=0.9524 | *best* | 43s
+08:46:34 | ep 07 | loss=0.0521 cls_loss=0.0521 perturbed_loss=0.1882 grad_norm=1.6816 | val meanF1=0.9594 worstF1=0.9314 meanAcc=0.9592 | *best* | 43s
+08:47:17 | ep 08 | loss=0.0335 cls_loss=0.0335 perturbed_loss=0.1502 grad_norm=1.3034 | val meanF1=0.9456 worstF1=0.9130 meanAcc=0.9455 | no-improve 1/5 | 43s
+08:48:01 | ep 09 | loss=0.0307 cls_loss=0.0307 perturbed_loss=0.1437 grad_norm=1.2160 | val meanF1=0.9530 worstF1=0.9293 meanAcc=0.9538 | no-improve 2/5 | 43s
+08:48:45 | ep 10 | loss=0.0259 cls_loss=0.0259 perturbed_loss=0.1392 grad_norm=1.0898 | val meanF1=0.9358 worstF1=0.9060 meanAcc=0.9378 | no-improve 3/5 | 43s
+08:49:28 | ep 11 | loss=0.0204 cls_loss=0.0204 perturbed_loss=0.1251 grad_norm=0.9211 | val meanF1=0.9375 worstF1=0.8918 meanAcc=0.9387 | no-improve 4/5 | 43s
+08:50:12 | ep 12 | loss=0.0173 cls_loss=0.0173 perturbed_loss=0.1086 grad_norm=0.7844 | val meanF1=0.9415 worstF1=0.9028 meanAcc=0.9420 | no-improve 5/5 | 43s
+08:50:12 | Early stopping at epoch 12 (best epoch 7).
+08:50:12 | Verified: BatchNorm running statistics unchanged during training.
+08:50:21 | Separability (chance 0.333): 0.8771
+08:50:21 | Sharpness: L=0.1086 L_eps=0.2122 delta=0.1036
+08:50:21 | Best epoch 7: mean F1=0.9594 worst F1=0.9314 -> /kaggle/working/ATML-PA1/task3/results/sam/best.pt

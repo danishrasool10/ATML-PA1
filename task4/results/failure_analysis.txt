@@ -1,0 +1,7 @@
+group unknown class  predicted CIFAR-10  score(-max logit)  threshold
+near  fox            cat                          -11.8803    -6.0457
+near  bus            truck                        -11.8788    -6.0457
+near  wolf           dog                          -11.3597    -6.0457
+far   mushroom       cat                          -12.2726    -6.0457
+far   bottle         cat                          -11.7036    -6.0457
+far   wardrobe       truck                        -11.5862    -6.0457

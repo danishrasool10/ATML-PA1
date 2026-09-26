@@ -1,0 +1,574 @@
+[
+  {
+    "epoch": 1,
+    "selection_score": 0.07677245855559835,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.2994011976047904,
+          "macro_f1": 0.11766361717100635
+        },
+        "art_painting": {
+          "acc": 0.22195121951219512,
+          "macro_f1": 0.05629353945987213
+        },
+        "cartoon": {
+          "acc": 0.1791044776119403,
+          "macro_f1": 0.056360219035916585
+        }
+      },
+      "mean_acc": 0.2334856315763086,
+      "mean_macro_f1": 0.07677245855559835,
+      "worst_acc": 0.1791044776119403,
+      "worst_macro_f1": 0.05629353945987213,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 2,
+    "selection_score": 0.15210371044941826,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.40718562874251496,
+          "macro_f1": 0.1931901577147288
+        },
+        "art_painting": {
+          "acc": 0.2634146341463415,
+          "macro_f1": 0.11728764030019259
+        },
+        "cartoon": {
+          "acc": 0.24307036247334754,
+          "macro_f1": 0.14583333333333334
+        }
+      },
+      "mean_acc": 0.30455687512073465,
+      "mean_macro_f1": 0.15210371044941826,
+      "worst_acc": 0.24307036247334754,
+      "worst_macro_f1": 0.11728764030019259,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 3,
+    "selection_score": 0.15885389899528157,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.41916167664670656,
+          "macro_f1": 0.1812788398154252
+        },
+        "art_painting": {
+          "acc": 0.3048780487804878,
+          "macro_f1": 0.14495067773756296
+        },
+        "cartoon": {
+          "acc": 0.255863539445629,
+          "macro_f1": 0.15033217943285657
+        }
+      },
+      "mean_acc": 0.3266344216242745,
+      "mean_macro_f1": 0.15885389899528157,
+      "worst_acc": 0.255863539445629,
+      "worst_macro_f1": 0.14495067773756296,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 4,
+    "selection_score": 0.08675268604310045,
+    "improved": false,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.3023952095808383,
+          "macro_f1": 0.12034417727487035
+        },
+        "art_painting": {
+          "acc": 0.21951219512195122,
+          "macro_f1": 0.05142857142857143
+        },
+        "cartoon": {
+          "acc": 0.19616204690831557,
+          "macro_f1": 0.08848530942585955
+        }
+      },
+      "mean_acc": 0.23935648387036834,
+      "mean_macro_f1": 0.08675268604310045,
+      "worst_acc": 0.19616204690831557,
+      "worst_macro_f1": 0.05142857142857143,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 5,
+    "selection_score": 0.3931044102669294,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.5508982035928144,
+          "macro_f1": 0.4034422977071973
+        },
+        "art_painting": {
+          "acc": 0.43414634146341463,
+          "macro_f1": 0.3769299705077488
+        },
+        "cartoon": {
+          "acc": 0.4584221748400853,
+          "macro_f1": 0.39894096258584205
+        }
+      },
+      "mean_acc": 0.4811555732987715,
+      "mean_macro_f1": 0.3931044102669294,
+      "worst_acc": 0.43414634146341463,
+      "worst_macro_f1": 0.3769299705077488,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 6,
+    "selection_score": 0.5884999012003219,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.6736526946107785,
+          "macro_f1": 0.5993024100575439
+        },
+        "art_painting": {
+          "acc": 0.5487804878048781,
+          "macro_f1": 0.5154734917488085
+        },
+        "cartoon": {
+          "acc": 0.650319829424307,
+          "macro_f1": 0.650723801794613
+        }
+      },
+      "mean_acc": 0.6242510039466546,
+      "mean_macro_f1": 0.5884999012003219,
+      "worst_acc": 0.5487804878048781,
+      "worst_macro_f1": 0.5154734917488085,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 7,
+    "selection_score": 0.737045920458497,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.8083832335329342,
+          "macro_f1": 0.7614894761859813
+        },
+        "art_painting": {
+          "acc": 0.6731707317073171,
+          "macro_f1": 0.655695746947675
+        },
+        "cartoon": {
+          "acc": 0.7867803837953091,
+          "macro_f1": 0.7939525382418348
+        }
+      },
+      "mean_acc": 0.7561114496785201,
+      "mean_macro_f1": 0.737045920458497,
+      "worst_acc": 0.6731707317073171,
+      "worst_macro_f1": 0.655695746947675,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 8,
+    "selection_score": 0.8247356537840648,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.8502994011976048,
+          "macro_f1": 0.8240588846990201
+        },
+        "art_painting": {
+          "acc": 0.7853658536585366,
+          "macro_f1": 0.7700378325224316
+        },
+        "cartoon": {
+          "acc": 0.8699360341151386,
+          "macro_f1": 0.8801102441307428
+        }
+      },
+      "mean_acc": 0.8352004296570934,
+      "mean_macro_f1": 0.8247356537840648,
+      "worst_acc": 0.7853658536585366,
+      "worst_macro_f1": 0.7700378325224316,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 9,
+    "selection_score": 0.8629474565815496,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.8922155688622755,
+          "macro_f1": 0.8701475149922885
+        },
+        "art_painting": {
+          "acc": 0.8219512195121951,
+          "macro_f1": 0.8114617201155606
+        },
+        "cartoon": {
+          "acc": 0.8976545842217484,
+          "macro_f1": 0.9072331346367998
+        }
+      },
+      "mean_acc": 0.8706071241987398,
+      "mean_macro_f1": 0.8629474565815496,
+      "worst_acc": 0.8219512195121951,
+      "worst_macro_f1": 0.8114617201155606,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 10,
+    "selection_score": 0.8836898614091017,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9251497005988024,
+          "macro_f1": 0.9116315910289046
+        },
+        "art_painting": {
+          "acc": 0.8268292682926829,
+          "macro_f1": 0.8148695024158404
+        },
+        "cartoon": {
+          "acc": 0.9211087420042644,
+          "macro_f1": 0.9245684907825596
+        }
+      },
+      "mean_acc": 0.8910292369652498,
+      "mean_macro_f1": 0.8836898614091017,
+      "worst_acc": 0.8268292682926829,
+      "worst_macro_f1": 0.8148695024158404,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 11,
+    "selection_score": 0.9090252833528579,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9461077844311377,
+          "macro_f1": 0.936879202766056
+        },
+        "art_painting": {
+          "acc": 0.8585365853658536,
+          "macro_f1": 0.8507656884158858
+        },
+        "cartoon": {
+          "acc": 0.9360341151385928,
+          "macro_f1": 0.9394309588766321
+        }
+      },
+      "mean_acc": 0.9135594949785281,
+      "mean_macro_f1": 0.9090252833528579,
+      "worst_acc": 0.8585365853658536,
+      "worst_macro_f1": 0.8507656884158858,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 12,
+    "selection_score": 0.9151513844174319,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9491017964071856,
+          "macro_f1": 0.9401769224389451
+        },
+        "art_painting": {
+          "acc": 0.8707317073170732,
+          "macro_f1": 0.8663165039008164
+        },
+        "cartoon": {
+          "acc": 0.9360341151385928,
+          "macro_f1": 0.9389607269125342
+        }
+      },
+      "mean_acc": 0.9186225396209505,
+      "mean_macro_f1": 0.9151513844174319,
+      "worst_acc": 0.8707317073170732,
+      "worst_macro_f1": 0.8663165039008164,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 13,
+    "selection_score": 0.9195005302705064,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9520958083832335,
+          "macro_f1": 0.942558641508337
+        },
+        "art_painting": {
+          "acc": 0.8829268292682927,
+          "macro_f1": 0.8741976293791092
+        },
+        "cartoon": {
+          "acc": 0.9339019189765458,
+          "macro_f1": 0.941745319924073
+        }
+      },
+      "mean_acc": 0.9229748522093573,
+      "mean_macro_f1": 0.9195005302705064,
+      "worst_acc": 0.8829268292682927,
+      "worst_macro_f1": 0.8741976293791092,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 14,
+    "selection_score": 0.924766934748772,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9431137724550899,
+          "macro_f1": 0.9326715165821399
+        },
+        "art_painting": {
+          "acc": 0.8853658536585366,
+          "macro_f1": 0.8843190738885749
+        },
+        "cartoon": {
+          "acc": 0.9509594882729211,
+          "macro_f1": 0.9573102137756012
+        }
+      },
+      "mean_acc": 0.9264797047955158,
+      "mean_macro_f1": 0.924766934748772,
+      "worst_acc": 0.8853658536585366,
+      "worst_macro_f1": 0.8843190738885749,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 15,
+    "selection_score": 0.9250824915267177,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9580838323353293,
+          "macro_f1": 0.9521934293479429
+        },
+        "art_painting": {
+          "acc": 0.8804878048780488,
+          "macro_f1": 0.8757548988109567
+        },
+        "cartoon": {
+          "acc": 0.9445628997867804,
+          "macro_f1": 0.9472991464212533
+        }
+      },
+      "mean_acc": 0.9277115123333862,
+      "mean_macro_f1": 0.9250824915267177,
+      "worst_acc": 0.8804878048780488,
+      "worst_macro_f1": 0.8757548988109567,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 16,
+    "selection_score": 0.9258843869733994,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9550898203592815,
+          "macro_f1": 0.9473857178565195
+        },
+        "art_painting": {
+          "acc": 0.8853658536585366,
+          "macro_f1": 0.8833980931184569
+        },
+        "cartoon": {
+          "acc": 0.9424307036247335,
+          "macro_f1": 0.9468693499452214
+        }
+      },
+      "mean_acc": 0.9276287925475172,
+      "mean_macro_f1": 0.9258843869733994,
+      "worst_acc": 0.8853658536585366,
+      "worst_macro_f1": 0.8833980931184569,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 17,
+    "selection_score": 0.9384889035070202,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9610778443113772,
+          "macro_f1": 0.9553740173108286
+        },
+        "art_painting": {
+          "acc": 0.9073170731707317,
+          "macro_f1": 0.9034732405758754
+        },
+        "cartoon": {
+          "acc": 0.9509594882729211,
+          "macro_f1": 0.9566194526343565
+        }
+      },
+      "mean_acc": 0.9397848019183433,
+      "mean_macro_f1": 0.9384889035070202,
+      "worst_acc": 0.9073170731707317,
+      "worst_macro_f1": 0.9034732405758754,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 18,
+    "selection_score": 0.9313644898818806,
+    "improved": false,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9640718562874252,
+          "macro_f1": 0.9568112727370924
+        },
+        "art_painting": {
+          "acc": 0.8951219512195122,
+          "macro_f1": 0.8938090576021501
+        },
+        "cartoon": {
+          "acc": 0.9360341151385928,
+          "macro_f1": 0.943473139306399
+        }
+      },
+      "mean_acc": 0.9317426408818434,
+      "mean_macro_f1": 0.9313644898818806,
+      "worst_acc": 0.8951219512195122,
+      "worst_macro_f1": 0.8938090576021501,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 19,
+    "selection_score": 0.9280333776902854,
+    "improved": false,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9491017964071856,
+          "macro_f1": 0.941239079211637
+        },
+        "art_painting": {
+          "acc": 0.9,
+          "macro_f1": 0.90101206735907
+        },
+        "cartoon": {
+          "acc": 0.9381663113006397,
+          "macro_f1": 0.9418489865001493
+        }
+      },
+      "mean_acc": 0.9290893692359418,
+      "mean_macro_f1": 0.9280333776902854,
+      "worst_acc": 0.9,
+      "worst_macro_f1": 0.90101206735907,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 20,
+    "selection_score": 0.9191487880997912,
+    "improved": false,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9461077844311377,
+          "macro_f1": 0.9358109768997959
+        },
+        "art_painting": {
+          "acc": 0.8731707317073171,
+          "macro_f1": 0.8683879571762675
+        },
+        "cartoon": {
+          "acc": 0.9509594882729211,
+          "macro_f1": 0.9532474302233104
+        }
+      },
+      "mean_acc": 0.9234126681371254,
+      "mean_macro_f1": 0.9191487880997912,
+      "worst_acc": 0.8731707317073171,
+      "worst_macro_f1": 0.8683879571762675,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 21,
+    "selection_score": 0.9335151971264267,
+    "improved": false,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9760479041916168,
+          "macro_f1": 0.9720738581397068
+        },
+        "art_painting": {
+          "acc": 0.8853658536585366,
+          "macro_f1": 0.8877694697011823
+        },
+        "cartoon": {
+          "acc": 0.9360341151385928,
+          "macro_f1": 0.940702263538391
+        }
+      },
+      "mean_acc": 0.9324826243295821,
+      "mean_macro_f1": 0.9335151971264267,
+      "worst_acc": 0.8853658536585366,
+      "worst_macro_f1": 0.8877694697011823,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 22,
+    "selection_score": 0.9372246903417668,
+    "improved": false,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9700598802395209,
+          "macro_f1": 0.9659353364925282
+        },
+        "art_painting": {
+          "acc": 0.8975609756097561,
+          "macro_f1": 0.8924102407172702
+        },
+        "cartoon": {
+          "acc": 0.9509594882729211,
+          "macro_f1": 0.9533284938155019
+        }
+      },
+      "mean_acc": 0.9395267813740661,
+      "mean_macro_f1": 0.9372246903417668,
+      "worst_acc": 0.8975609756097561,
+      "worst_macro_f1": 0.8924102407172702,
+      "worst_domain_by_f1": "art_painting"
+    }
+  }
+]

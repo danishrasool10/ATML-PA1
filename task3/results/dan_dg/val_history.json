@@ -1,0 +1,158 @@
+[
+  {
+    "epoch": 1,
+    "selection_score": 0.05066996495567924,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.25748502994011974,
+          "macro_f1": 0.058503401360544216
+        },
+        "art_painting": {
+          "acc": 0.21951219512195122,
+          "macro_f1": 0.05142857142857143
+        },
+        "cartoon": {
+          "acc": 0.17270788912579957,
+          "macro_f1": 0.04207792207792208
+        }
+      },
+      "mean_acc": 0.21656837139595686,
+      "mean_macro_f1": 0.05066996495567924,
+      "worst_acc": 0.17270788912579957,
+      "worst_macro_f1": 0.04207792207792208,
+      "worst_domain_by_f1": "cartoon"
+    }
+  },
+  {
+    "epoch": 2,
+    "selection_score": 0.05066996495567924,
+    "improved": false,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.25748502994011974,
+          "macro_f1": 0.058503401360544216
+        },
+        "art_painting": {
+          "acc": 0.21951219512195122,
+          "macro_f1": 0.05142857142857143
+        },
+        "cartoon": {
+          "acc": 0.17270788912579957,
+          "macro_f1": 0.04207792207792208
+        }
+      },
+      "mean_acc": 0.21656837139595686,
+      "mean_macro_f1": 0.05066996495567924,
+      "worst_acc": 0.17270788912579957,
+      "worst_macro_f1": 0.04207792207792208,
+      "worst_domain_by_f1": "cartoon"
+    }
+  },
+  {
+    "epoch": 3,
+    "selection_score": 0.05066996495567924,
+    "improved": false,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.25748502994011974,
+          "macro_f1": 0.058503401360544216
+        },
+        "art_painting": {
+          "acc": 0.21951219512195122,
+          "macro_f1": 0.05142857142857143
+        },
+        "cartoon": {
+          "acc": 0.17270788912579957,
+          "macro_f1": 0.04207792207792208
+        }
+      },
+      "mean_acc": 0.21656837139595686,
+      "mean_macro_f1": 0.05066996495567924,
+      "worst_acc": 0.17270788912579957,
+      "worst_macro_f1": 0.04207792207792208,
+      "worst_domain_by_f1": "cartoon"
+    }
+  },
+  {
+    "epoch": 4,
+    "selection_score": 0.05066996495567924,
+    "improved": false,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.25748502994011974,
+          "macro_f1": 0.058503401360544216
+        },
+        "art_painting": {
+          "acc": 0.21951219512195122,
+          "macro_f1": 0.05142857142857143
+        },
+        "cartoon": {
+          "acc": 0.17270788912579957,
+          "macro_f1": 0.04207792207792208
+        }
+      },
+      "mean_acc": 0.21656837139595686,
+      "mean_macro_f1": 0.05066996495567924,
+      "worst_acc": 0.17270788912579957,
+      "worst_macro_f1": 0.04207792207792208,
+      "worst_domain_by_f1": "cartoon"
+    }
+  },
+  {
+    "epoch": 5,
+    "selection_score": 0.05066996495567924,
+    "improved": false,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.25748502994011974,
+          "macro_f1": 0.058503401360544216
+        },
+        "art_painting": {
+          "acc": 0.21951219512195122,
+          "macro_f1": 0.05142857142857143
+        },
+        "cartoon": {
+          "acc": 0.17270788912579957,
+          "macro_f1": 0.04207792207792208
+        }
+      },
+      "mean_acc": 0.21656837139595686,
+      "mean_macro_f1": 0.05066996495567924,
+      "worst_acc": 0.17270788912579957,
+      "worst_macro_f1": 0.04207792207792208,
+      "worst_domain_by_f1": "cartoon"
+    }
+  },
+  {
+    "epoch": 6,
+    "selection_score": 0.05066996495567924,
+    "improved": false,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.25748502994011974,
+          "macro_f1": 0.058503401360544216
+        },
+        "art_painting": {
+          "acc": 0.21951219512195122,
+          "macro_f1": 0.05142857142857143
+        },
+        "cartoon": {
+          "acc": 0.17270788912579957,
+          "macro_f1": 0.04207792207792208
+        }
+      },
+      "mean_acc": 0.21656837139595686,
+      "mean_macro_f1": 0.05066996495567924,
+      "worst_acc": 0.17270788912579957,
+      "worst_macro_f1": 0.04207792207792208,
+      "worst_domain_by_f1": "cartoon"
+    }
+  }
+]

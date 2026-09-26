@@ -1,0 +1,17 @@
+group,unknown_class,n,accepted_rate,top_absorbing_class
+near,bus,100,0.83,truck
+near,camel,100,0.59,dog
+near,fox,100,0.63,cat
+near,leopard,100,0.68,frog
+near,motorcycle,100,0.42,truck
+near,pickup_truck,100,0.91,automobile
+near,tractor,100,0.65,truck
+near,wolf,100,0.85,dog
+far,bottle,100,0.42,cat
+far,bowl,100,0.42,frog
+far,chair,100,0.45,airplane
+far,clock,100,0.46,automobile
+far,keyboard,100,0.35,airplane
+far,mushroom,100,0.45,bird
+far,sunflower,100,0.43,bird
+far,wardrobe,100,0.69,truck

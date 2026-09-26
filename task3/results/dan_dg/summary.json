@@ -1,0 +1,90 @@
+{
+  "run_name": "dan_dg",
+  "method": "dan_dg",
+  "config": {
+    "seed": 6304,
+    "split_file": "shared/splits/pacs_sketch_seed6304.json",
+    "data_root": null,
+    "source_domains": [
+      "photo",
+      "art_painting",
+      "cartoon"
+    ],
+    "num_classes": 7,
+    "pretrained": true,
+    "resize": 256,
+    "crop": 224,
+    "batch_per_domain": 8,
+    "epoch_mode": "max",
+    "num_workers": 4,
+    "val_batch_size": 64,
+    "optimizer": {
+      "name": "adamw",
+      "lr": 0.0001,
+      "weight_decay": 0.0001
+    },
+    "max_epochs": 30,
+    "patience": 5,
+    "output_dir": "task3/results",
+    "diagnostics": {
+      "separability_train_frac": 0.7,
+      "sharpness_per_domain": 32,
+      "sharpness_radius": 0.05
+    },
+    "method": "dan_dg",
+    "lambda_dg": 1.0,
+    "mmd_bandwidth_multipliers": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "study_values": [
+      0.1,
+      1.0,
+      10.0
+    ]
+  },
+  "best_epoch": 1,
+  "epochs_run": 6,
+  "source_val": {
+    "per_domain": {
+      "photo": {
+        "acc": 0.25748502994011974,
+        "macro_f1": 0.058503401360544216
+      },
+      "art_painting": {
+        "acc": 0.21951219512195122,
+        "macro_f1": 0.05142857142857143
+      },
+      "cartoon": {
+        "acc": 0.17270788912579957,
+        "macro_f1": 0.04207792207792208
+      }
+    },
+    "mean_acc": 0.21656837139595686,
+    "mean_macro_f1": 0.05066996495567924,
+    "worst_acc": 0.17270788912579957,
+    "worst_macro_f1": 0.04207792207792208,
+    "worst_domain_by_f1": "cartoon"
+  },
+  "separability": {
+    "accuracy": 0.3222591362126246,
+    "chance": 0.3333333333333333,
+    "n_train": 701,
+    "n_test": 301,
+    "domains": [
+      "photo",
+      "art_painting",
+      "cartoon"
+    ]
+  },
+  "sharpness": {
+    "loss": 1.9255701303482056,
+    "perturbed_loss": 1.9427727460861206,
+    "delta_sharp": 0.01720261573791504,
+    "grad_norm": 1.866874098777771,
+    "radius": 0.05,
+    "n": 96
+  },
+  "checkpoint": "/kaggle/working/ATML-PA1/task3/results/dan_dg/best.pt"
+}

@@ -1,0 +1,20 @@
+08:50:28 | === run 'sam_rho0.01' | method=sam | device=cuda | seed=6304 ===
+08:50:28 | photo: train=1336 val=334
+08:50:28 | art_painting: train=1638 val=410
+08:50:28 | cartoon: train=1875 val=469
+08:50:28 | steps/epoch=234 (batch 8 x 3 domains)
+08:51:14 | ep 01 | loss=0.5224 cls_loss=0.5224 perturbed_loss=0.6170 grad_norm=8.6662 | val meanF1=0.9014 worstF1=0.8595 meanAcc=0.9029 | *best* | 45s
+08:51:58 | ep 02 | loss=0.1986 cls_loss=0.1986 perturbed_loss=0.2714 grad_norm=6.5105 | val meanF1=0.9360 worstF1=0.8953 meanAcc=0.9342 | *best* | 43s
+08:52:41 | ep 03 | loss=0.1257 cls_loss=0.1257 perturbed_loss=0.1890 grad_norm=5.4423 | val meanF1=0.9191 worstF1=0.8973 meanAcc=0.9216 | no-improve 1/5 | 43s
+08:53:25 | ep 04 | loss=0.0996 cls_loss=0.0996 perturbed_loss=0.1558 grad_norm=4.7552 | val meanF1=0.9397 worstF1=0.9091 meanAcc=0.9410 | *best* | 43s
+08:54:09 | ep 05 | loss=0.0706 cls_loss=0.0706 perturbed_loss=0.1226 grad_norm=4.1780 | val meanF1=0.9352 worstF1=0.9010 meanAcc=0.9355 | no-improve 1/5 | 43s
+08:54:52 | ep 06 | loss=0.0563 cls_loss=0.0563 perturbed_loss=0.0976 grad_norm=3.2770 | val meanF1=0.9180 worstF1=0.8530 meanAcc=0.9168 | no-improve 2/5 | 43s
+08:55:36 | ep 07 | loss=0.0588 cls_loss=0.0588 perturbed_loss=0.1056 grad_norm=3.7256 | val meanF1=0.9327 worstF1=0.8996 meanAcc=0.9319 | no-improve 3/5 | 43s
+08:56:19 | ep 08 | loss=0.0343 cls_loss=0.0343 perturbed_loss=0.0692 grad_norm=2.6285 | val meanF1=0.9345 worstF1=0.9003 meanAcc=0.9337 | no-improve 4/5 | 43s
+08:57:03 | ep 09 | loss=0.0327 cls_loss=0.0327 perturbed_loss=0.0670 grad_norm=2.5290 | val meanF1=0.9090 worstF1=0.8681 meanAcc=0.9150 | no-improve 5/5 | 43s
+08:57:04 | Early stopping at epoch 9 (best epoch 4).
+08:57:04 | Verified: BatchNorm running statistics unchanged during training.
+08:57:10 | Separability (chance 0.333): 0.8937
+08:57:10 | Sharpness: L=0.1278 L_eps=0.3041 delta=0.1763
+08:57:10 | Best epoch 4: mean F1=0.9397 worst F1=0.9091 -> /kaggle/working/ATML-PA1/task3/results/sam_rho0.01/best.pt
+08:57:10 | Skipping 'sam': summary.json exists (use --overwrite to re-run).

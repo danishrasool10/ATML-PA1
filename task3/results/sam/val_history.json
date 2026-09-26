@@ -1,0 +1,314 @@
+[
+  {
+    "epoch": 1,
+    "selection_score": 0.8616732238766192,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9221556886227545,
+          "macro_f1": 0.9052053774747216
+        },
+        "art_painting": {
+          "acc": 0.824390243902439,
+          "macro_f1": 0.8042340094263422
+        },
+        "cartoon": {
+          "acc": 0.8763326226012793,
+          "macro_f1": 0.8755802847287936
+        }
+      },
+      "mean_acc": 0.8742928517088243,
+      "mean_macro_f1": 0.8616732238766192,
+      "worst_acc": 0.824390243902439,
+      "worst_macro_f1": 0.8042340094263422,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 2,
+    "selection_score": 0.907383335230708,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9461077844311377,
+          "macro_f1": 0.9370035122381456
+        },
+        "art_painting": {
+          "acc": 0.8780487804878049,
+          "macro_f1": 0.8735295937639977
+        },
+        "cartoon": {
+          "acc": 0.9019189765458422,
+          "macro_f1": 0.9116168996899808
+        }
+      },
+      "mean_acc": 0.9086918471549282,
+      "mean_macro_f1": 0.907383335230708,
+      "worst_acc": 0.8780487804878049,
+      "worst_macro_f1": 0.8735295937639977,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 3,
+    "selection_score": 0.9203687861721789,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9461077844311377,
+          "macro_f1": 0.9345492267904786
+        },
+        "art_painting": {
+          "acc": 0.875609756097561,
+          "macro_f1": 0.8742303120809405
+        },
+        "cartoon": {
+          "acc": 0.9466950959488273,
+          "macro_f1": 0.9523268196451177
+        }
+      },
+      "mean_acc": 0.9228042121591753,
+      "mean_macro_f1": 0.9203687861721789,
+      "worst_acc": 0.875609756097561,
+      "worst_macro_f1": 0.8742303120809405,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 4,
+    "selection_score": 0.9343198692531556,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9610778443113772,
+          "macro_f1": 0.9529281012069359
+        },
+        "art_painting": {
+          "acc": 0.9097560975609756,
+          "macro_f1": 0.9045115447469969
+        },
+        "cartoon": {
+          "acc": 0.9402985074626866,
+          "macro_f1": 0.9455199618055339
+        }
+      },
+      "mean_acc": 0.9370441497783464,
+      "mean_macro_f1": 0.9343198692531556,
+      "worst_acc": 0.9097560975609756,
+      "worst_macro_f1": 0.9045115447469969,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 5,
+    "selection_score": 0.9414605967599234,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9580838323353293,
+          "macro_f1": 0.9491921411389564
+        },
+        "art_painting": {
+          "acc": 0.9243902439024391,
+          "macro_f1": 0.9233232005256734
+        },
+        "cartoon": {
+          "acc": 0.9466950959488273,
+          "macro_f1": 0.9518664486151405
+        }
+      },
+      "mean_acc": 0.9430563907288652,
+      "mean_macro_f1": 0.9414605967599234,
+      "worst_acc": 0.9243902439024391,
+      "worst_macro_f1": 0.9233232005256734,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 6,
+    "selection_score": 0.9526791767676324,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9760479041916168,
+          "macro_f1": 0.9715802741959093
+        },
+        "art_painting": {
+          "acc": 0.9195121951219513,
+          "macro_f1": 0.9199754314978771
+        },
+        "cartoon": {
+          "acc": 0.9616204690831557,
+          "macro_f1": 0.9664818246091107
+        }
+      },
+      "mean_acc": 0.952393522798908,
+      "mean_macro_f1": 0.9526791767676324,
+      "worst_acc": 0.9195121951219513,
+      "worst_macro_f1": 0.9199754314978771,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 7,
+    "selection_score": 0.9594096222748036,
+    "improved": true,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9820359281437125,
+          "macro_f1": 0.9782967032967033
+        },
+        "art_painting": {
+          "acc": 0.9317073170731708,
+          "macro_f1": 0.9314339708653071
+        },
+        "cartoon": {
+          "acc": 0.9637526652452025,
+          "macro_f1": 0.9684981926624007
+        }
+      },
+      "mean_acc": 0.959165303487362,
+      "mean_macro_f1": 0.9594096222748036,
+      "worst_acc": 0.9317073170731708,
+      "worst_macro_f1": 0.9314339708653071,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 8,
+    "selection_score": 0.9455649465494046,
+    "improved": false,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9670658682634731,
+          "macro_f1": 0.9613313273122527
+        },
+        "art_painting": {
+          "acc": 0.9121951219512195,
+          "macro_f1": 0.9129753177961858
+        },
+        "cartoon": {
+          "acc": 0.9573560767590619,
+          "macro_f1": 0.9623881945397752
+        }
+      },
+      "mean_acc": 0.9455390223245849,
+      "mean_macro_f1": 0.9455649465494046,
+      "worst_acc": 0.9121951219512195,
+      "worst_macro_f1": 0.9129753177961858,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 9,
+    "selection_score": 0.9529526682221073,
+    "improved": false,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9700598802395209,
+          "macro_f1": 0.9647604040690541
+        },
+        "art_painting": {
+          "acc": 0.9317073170731708,
+          "macro_f1": 0.9293314898092087
+        },
+        "cartoon": {
+          "acc": 0.9594882729211087,
+          "macro_f1": 0.9647661107880596
+        }
+      },
+      "mean_acc": 0.9537518234112667,
+      "mean_macro_f1": 0.9529526682221073,
+      "worst_acc": 0.9317073170731708,
+      "worst_macro_f1": 0.9293314898092087,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 10,
+    "selection_score": 0.935831956042275,
+    "improved": false,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9610778443113772,
+          "macro_f1": 0.9529414922964798
+        },
+        "art_painting": {
+          "acc": 0.9097560975609756,
+          "macro_f1": 0.9060458504008805
+        },
+        "cartoon": {
+          "acc": 0.9424307036247335,
+          "macro_f1": 0.9485085254294646
+        }
+      },
+      "mean_acc": 0.9377548818323621,
+      "mean_macro_f1": 0.935831956042275,
+      "worst_acc": 0.9097560975609756,
+      "worst_macro_f1": 0.9060458504008805,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 11,
+    "selection_score": 0.9375346799295198,
+    "improved": false,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9760479041916168,
+          "macro_f1": 0.9713361621308291
+        },
+        "art_painting": {
+          "acc": 0.8975609756097561,
+          "macro_f1": 0.8918491635234754
+        },
+        "cartoon": {
+          "acc": 0.9424307036247335,
+          "macro_f1": 0.9494187141342552
+        }
+      },
+      "mean_acc": 0.9386798611420355,
+      "mean_macro_f1": 0.9375346799295198,
+      "worst_acc": 0.8975609756097561,
+      "worst_macro_f1": 0.8918491635234754,
+      "worst_domain_by_f1": "art_painting"
+    }
+  },
+  {
+    "epoch": 12,
+    "selection_score": 0.9415224548178105,
+    "improved": false,
+    "val": {
+      "per_domain": {
+        "photo": {
+          "acc": 0.9640718562874252,
+          "macro_f1": 0.9572848135701576
+        },
+        "art_painting": {
+          "acc": 0.9024390243902439,
+          "macro_f1": 0.9028049062503284
+        },
+        "cartoon": {
+          "acc": 0.9594882729211087,
+          "macro_f1": 0.9644776446329455
+        }
+      },
+      "mean_acc": 0.9419997178662592,
+      "mean_macro_f1": 0.9415224548178105,
+      "worst_acc": 0.9024390243902439,
+      "worst_macro_f1": 0.9028049062503284,
+      "worst_domain_by_f1": "art_painting"
+    }
+  }
+]
